@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Popular Movies II R2</string>
+    <string name="load_more">Load More</string>
+    <string name="title_activity_detail">Movie Detail</string>
+    <string name="title_activity_reviews">Reviews</string>
+
+    <string-array name="sorting">
+        <item>Popular</item>
+        <item>Top Rated</item>
+        <item>My Favorite Collection</item>
+    </string-array>
+
+</resources>
