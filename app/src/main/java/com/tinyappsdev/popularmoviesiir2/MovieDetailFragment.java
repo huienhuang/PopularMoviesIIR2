@@ -193,7 +193,7 @@ public class MovieDetailFragment extends Fragment {
 
         Button buttonMaskAsFavorite = ((Button)view.findViewById(R.id.button_mask_as_favorite));
         boolean isMarked = mFavoriteMovies.isMarked(mMovie);
-        buttonMaskAsFavorite.setText(isMarked ? "Unmark" : "Mark As Favorite");
+        buttonMaskAsFavorite.setText(isMarked ? "Unmark" : "Mark");
 
         buttonMaskAsFavorite.setTag(isMarked);
         buttonMaskAsFavorite.setOnClickListener(new View.OnClickListener() {
@@ -205,7 +205,7 @@ public class MovieDetailFragment extends Fragment {
                     mFavoriteMovies.mark(mMovie);
                 isMarked = mFavoriteMovies.isMarked(mMovie);
                 v.setTag(isMarked);
-                ((Button)v).setText(isMarked ? "Unmark" : "Mark As Favorite");
+                ((Button)v).setText(isMarked ? "Unmark" : "Mark");
             }
         });
 
